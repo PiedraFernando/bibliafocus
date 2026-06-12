@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio Bloqueado - Biblia Focus</title>
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="blocked-title">Sitio Bloqueado</h1>
+    <p class="blocked-domain" id="blockedDomain"></p>
+    <p class="blocked-subtitle">En su lugar, aquí tienes un versículo de la Biblia.</p>
+
+    <div class="verse-card" id="verseCard">
+      <div class="verse-reference" id="verseReference"></div>
+      <blockquote class="verse-text" id="verseText"></blockquote>
+      <div class="verse-divider"></div>
+      <p class="verse-translation">Nueva Versión Internacional (NVI)</p>
+    </div>
+
+    <button class="btn-allow-site" id="btnAllowSite">
+      &#9202; Habilitar este sitio por 30 minutos
+    </button>
+
+    <div class="allow-feedback" id="allowFeedback" style="display:none;">
+      <span id="allowFeedbackText"></span>
+    </div>
+
+    <button class="btn-read-chapter" id="btnReadChapter">
+      &#128214; Leer capítulo completo
+    </button>
+
+    <div class="chapter-container" id="chapterContainer" style="display:none;">
+      <div class="chapter-header">
+        <h2 id="chapterTitle"></h2>
+        <button class="btn-close-chapter" id="btnCloseChapter">&#10005;</button>
+      </div>
+      <div class="chapter-verses" id="chapterVerses"></div>
+    </div>
+
+    <button class="btn-another-verse" id="btnAnotherVerse">
+      &#128260; Otro versículo
+    </button>
+  </div>
+
+  <script src="bible_data.js"></script>
+  <script src="blocked.js"></script>
+</body>
+</html>
