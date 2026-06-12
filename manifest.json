@@ -2,15 +2,12 @@
   "manifest_version": 3,
   "name": "Biblia Focus - page bloquer",
   "version": "1.0.0",
-  "description": "Bloquea sitios de entretenimiento y muestra versículos bíblicos aleatorios NVI. Opción de habilitar por 30 min. No se puede desactivar sin desinstalar.",
+  "description": "Bloquea sitios de entretenimiento y muestra versículos NVI. Habilita por 30 min. No se desactiva sin desinstalar.",
   "permissions": [
     "webNavigation",
     "tabs",
     "storage",
     "alarms"
-  ],
-  "host_permissions": [
-    "<all_urls>"
   ],
   "background": {
     "service_worker": "background.js"
@@ -24,7 +21,6 @@
     "extension_pages": "script-src 'self'; object-src 'self'"
   },
   "author": "Biblia Focus",
-  "homepage_url": "https://github.com/bibliafocus/biblia-focus",
-  "license": "AGPL-3.0-or-later",
+  "homepage_url": "https://github.com/PiedraFernando/bibliafocus",
   "offline_enabled": true
 }

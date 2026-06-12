@@ -31,11 +31,12 @@ All Bible verses (NVI - Nueva Versión Internacional) are stored locally within 
 
 The extension requests the following permissions and uses them solely as described:
 
-- **webNavigation**: To detect when you navigate to a blocked website and redirect to the verse page
-- **tabs**: To update the tab URL when redirecting blocked sites
-- **storage**: To store the temporary allow-list for the 30-minute access feature
-- **alarms**: To automatically revoke temporary site access after 30 minutes
-- **host_permissions (<all_urls>)**: To check all URLs against the blocklist; no data is sent externally
+- **webNavigation**: To detect when you navigate to a blocked website and redirect to the verse page. This permission does not require access to page content.
+- **tabs**: To update the tab URL when redirecting blocked sites to the extension's verse page. No tab content is read or modified.
+- **storage**: To store the temporary allow-list for the 30-minute access feature. Data stays locally on your device.
+- **alarms**: To automatically revoke temporary site access after 30 minutes. No data is sent externally.
+
+This extension does NOT require or use broad host permissions (`<all_urls>`). It only intercepts navigation events, which is handled by the webNavigation permission.
 
 ## Third Parties
 
